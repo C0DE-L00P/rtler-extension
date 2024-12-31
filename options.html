@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Auto RTL Support Settings</title>
+  <style>
+    body {
+      padding: 20px;
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .excluded-sites {
+      margin-top: 20px;
+    }
+    .site-list {
+      margin-top: 10px;
+    }
+    .site-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 8px;
+    }
+    .site-item button {
+      margin-left: 10px;
+    }
+    input[type="text"] {
+      width: 300px;
+      padding: 5px;
+    }
+    button {
+      padding: 5px 10px;
+    }
+    .status {
+      color: green;
+      margin-top: 10px;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Auto RTL Support Settings</h2>
+    
+    <div class="add-site">
+      <h3>Add Site to Exclude</h3>
+      <input type="text" id="newSite" placeholder="Enter domain (e.g., example.com)">
+      <button id="addSite">Add</button>
+    </div>
+
+    <div class="excluded-sites">
+      <h3>Excluded Sites</h3>
+      <div id="siteList" class="site-list"></div>
+    </div>
+
+    <div id="status" class="status">Settings saved!</div>
+  </div>
+  <script src="options.js"></script>
+</body>
+</html> 
